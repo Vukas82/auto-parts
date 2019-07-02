@@ -33,7 +33,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     // height: 140px;
-    height: 110px;
+    height: 100px;
     padding: 1.5em 3.4em;
 
     position: fixed;
@@ -128,8 +128,8 @@ header {
 .circle {
     display: inline-block;
     position: relative;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     background-color: #fff;
     border-radius: 50%;
     margin-left: 10px;
@@ -154,7 +154,7 @@ header {
     background-color: #111;
     border-radius: 50%;
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -166,7 +166,7 @@ header {
     background-color: #111;
     border-radius: 50%;
     position: absolute;
-    top: 16px;
+    top: 13px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -179,7 +179,7 @@ header {
     background-color: #111;
     border-radius: 50%;
     position: absolute;
-    bottom: 8px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -790,12 +790,9 @@ header {
 
 .grid {
     width: 100%;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    height: 600px;
-    // display: flex;
-    // flex-direction: row;
+    height: 500px;
 }
 
 .mask {
@@ -827,7 +824,7 @@ header {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        transition: all 1.5s ease;
+        transition: all .5s ease;
 
     }
 
@@ -844,7 +841,7 @@ header {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        transition: all 1s ease;
+        transition: all .5s ease;
         opacity: 0;
     }
 }
@@ -1053,15 +1050,58 @@ header {
     grid-area: about__1;
 }
 
+.about__1::after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background-color: #181818;
+    position: absolute;
+    top: 58px;
+    left: 100px;
+    // left: -280px;
+    transition: all .5s ease-in-out;
+    overflow-x: hidden;
+}
+
+.about__1:hover::after {
+    // left: 68px;
+    width: 207px;
+}
+
 .about__2 {
     grid-area: about__2;
     position: relative;
+    cursor: pointer;
 
     .about__2__img {
         position: absolute;
         top: -10px;
         left: -6px;
     }
+}
+
+.about__2__text::after,
+.about__3__text::after,
+.about__4__text::after,
+.about__5__text::after {
+    content: "";
+    height: 5px;
+    width: 0px;
+    background-color: $orange-color;
+    position: absolute;
+    top: 25px;
+    left: 68px;
+    // left: -280px;
+    transition: all .5s ease-in-out;
+    overflow-x: hidden;
+}
+
+.about__2__text:hover::after,
+.about__3__text:hover::after,
+.about__4__text:hover::after,
+.about__5__text:hover::after {
+    // left: 68px;
+    width: 207px;
 }
 
 .about__3 {
@@ -1105,7 +1145,7 @@ header {
 .pravna__lica {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 450px;
 
 
     .pravna__lica__img {
@@ -1120,10 +1160,10 @@ header {
 
     .maska__2 {
         width: 100%;
-        height: 550px;
+        height: 100%;
         // background: #181818;
         background: black;
-        opacity: .97;
+        opacity: .95;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -1139,7 +1179,7 @@ header {
         color: #fff;
         text-align: center;
         // margin-top: 60px;
-        font-size: 33px;
+        font-size: 1.6rem;
         line-height: 1.5;
     }
 
