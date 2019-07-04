@@ -786,7 +786,7 @@ header {
 .welcome {
     height: 300px;
     width: 100%;
-    margin-top: 100px;
+    // margin-top: 100px;
     // background: url('/images/izduvni-sistemi.webp');
     position: relative;
 
@@ -797,7 +797,7 @@ header {
         font-weight: 700;
         color: #181818;
         text-align: center;
-        margin-top: 60px;
+        // margin-top: 60px;
         text-transform: uppercase;
 
         span {
@@ -811,7 +811,7 @@ header {
         font-weight: 700;
         color: #181818;
         text-align: center;
-        margin-top: 135px;
+        // margin-top: 135px;
         text-transform: uppercase;
         width: 90%;
 
@@ -1061,14 +1061,14 @@ header {
         // width: 200px;
         // height: 70px;
         padding: 10px 30px;
-        padding-left: 0px;
-        // border: 1px solid #181818;
+        // padding-left: 0px;
+        border: 1px solid darken($orange-color, $amount: 5%);
         border-radius: 3px;
         outline: none;
         text-decoration: none;
-        // background-color: $orange-color;
-        // background-color: #fff;
-        color: $orange-color;
+        background-color: $orange-color;
+        color: #fff;
+        // color: $orange-color;
         font-size: 1rem;
         transition: all .3s ease;
         font-weight: 600;
@@ -1076,11 +1076,32 @@ header {
 
     a:hover {
         // background-color: darken($orange-color, $amount: 5%);
+        background-color: #181818;
         // background-color: lighten($orange-color, $amount: 10%);
-        color: #181818;
-        // border-color: #fff;
+        // color: #181818;
+        border-color: #181818;
     }
 }
+
+.about__all {
+    h3::after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        // background-color: #181818;
+        background-color: $orange-color;
+        position: absolute;
+        top: 25px;
+        left: 20%;
+        // left: -280px;
+        transition: all .5s ease-in-out;
+        overflow-x: hidden;
+    }
+}
+
+// .about__all:hover h3::after {
+//     width: 40px;
+// }
 
 .o__nama {
     h3 {
@@ -1092,27 +1113,29 @@ header {
     }
 }
 
+.o__nama {
+    h3::after {
+        content: "";
+        height: 5px;
+        width: 0px;
+        background-color: #181818;
+        position: absolute;
+        top: 60px;
+        left: 20%;
+        // left: -280px;
+        transition: all .5s ease-in-out;
+        overflow-x: hidden;
+    }
+}
+
+.about__all:hover h3::after {
+    width: 60%;
+}
+
 .about__1 {
     grid-area: about__1;
 }
 
-.about__1::after {
-    content: "";
-    height: 5px;
-    width: 0px;
-    background-color: #181818;
-    position: absolute;
-    top: 58px;
-    left: 100px;
-    // left: -280px;
-    transition: all .5s ease-in-out;
-    overflow-x: hidden;
-}
-
-.about__1:hover::after {
-    // left: 68px;
-    width: 207px;
-}
 
 .about__2 {
     grid-area: about__2;
@@ -1126,29 +1149,29 @@ header {
     }
 }
 
-.about__2__text::after,
-.about__3__text::after,
-.about__4__text::after,
-.about__5__text::after {
-    content: "";
-    height: 5px;
-    width: 0px;
-    background-color: $orange-color;
-    position: absolute;
-    top: 25px;
-    left: 68px;
-    // left: -280px;
-    transition: all .5s ease-in-out;
-    overflow-x: hidden;
-}
+// .about__2__text::after,
+// .about__3__text::after,
+// .about__4__text::after,
+// .about__5__text::after {
+//     content: "";
+//     height: 5px;
+//     width: 0px;
+//     background-color: $orange-color;
+//     position: absolute;
+//     top: 25px;
+//     left: 68px;
+//     // left: -280px;
+//     transition: all .5s ease-in-out;
+//     overflow-x: hidden;
+// }
 
-.about__2__text:hover::after,
-.about__3__text:hover::after,
-.about__4__text:hover::after,
-.about__5__text:hover::after {
-    // left: 68px;
-    width: 207px;
-}
+// .about__2__text:hover::after,
+// .about__3__text:hover::after,
+// .about__4__text:hover::after,
+// .about__5__text:hover::after {
+//     // left: 68px;
+//     width: 207px;
+// }
 
 .about__3 {
     grid-area: about__3;
