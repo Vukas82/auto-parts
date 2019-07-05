@@ -1331,6 +1331,8 @@ header {
         // background: red;
         color: #fff;
         z-index: 3;
+        // animation: offerP1 1.8s ease-in;
+
 
     }
 
@@ -1376,9 +1378,24 @@ header {
 
     .spec__offer__p1 {
         position: absolute;
+        // background: $orange-color;
         width: 100%;
         top: 25%;
         left: 0px;
+        animation: offerP1 1.5s ease-in;
+    }
+
+    @keyframes offerP1 {
+        from {
+            top: -100%;
+            left: 0px;
+        }
+
+        to {
+            top: 25%;
+            left: 0px;
+            // color: red;
+        }
     }
 
     .spec__offer__p2 {
@@ -1386,6 +1403,19 @@ header {
         width: 100%;
         top: 70%;
         left: 0px;
+        animation: offerP2 2s ease-in;
+    }
+
+    @keyframes offerP2 {
+        from {
+            top: 70%;
+            left: -2000px;
+        }
+
+        to {
+            top: 70%;
+            left: 0px;
+        }
     }
 
     .spec__offer__a {
@@ -1394,6 +1424,21 @@ header {
         top: 85%;
         left: 0px;
         z-index: 3;
+        animation: offerA 3s ease-in;
+    }
+
+    @keyframes offerA {
+        from {
+            top: 85%;
+            left: 0px;
+            opacity: 0;
+        }
+
+        to {
+            top: 85%;
+            left: 0px;
+            opacity: 1;
+        }
     }
 
 }
