@@ -840,10 +840,13 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     height: 500px;
+    grid-row-gap: 0px;
+    grid-column-gap: 2px;
+    border-top: 2px solid $orange-color;
 }
 
 .mask {
-    widows: 100%;
+    width: 100%;
     height: 100%;
     background: #181818;
     opacity: 0;
@@ -851,8 +854,11 @@ header {
 
 .img__1 {
     // border: 1px solid #181818;
-    border-right: 2px solid #181818;
-    border-bottom: 2px solid #181818;
+    // border-right: 2px solid #181818;
+    border-right: 2px solid $orange-color;
+    // border-bottom: 2px solid #181818;
+    border-bottom: 2px solid $orange-color;
+    border-top: 0px solid $orange-color;
 
     cursor: pointer;
     background-color: #181818;
@@ -1301,18 +1307,33 @@ header {
     }
 }
 
-.spec__offer {
+.spec__offer__wrap {
+    width: 100%;
+    height: 380px;
+    // margin: 10px 0;
+    background-color: $orange-color;
+    position: relative;
 
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// #spec__offer {
+//     display: none;
+// }
+#block1 {
     display: none;
 
     position: relative;
     width: 100%;
     margin: auto;
-    height: 360px;
-    margin-top: 60px;
+    height: 380px;
+    margin-top: 0px;
     overflow: hidden;
 
-    // background: grey;
     .over {
         position: absolute;
         top: 0;
@@ -1320,6 +1341,7 @@ header {
         width: 100%;
         height: 99%;
         background: url('/images/dot.png') repeat;
+        // background-color: red;
         background-size: 3px;
         z-index: 2;
     }
@@ -1330,6 +1352,8 @@ header {
     }
 
     h4 {
+        // display: none;
+
         position: relative;
         width: 90%;
         text-align: left;
@@ -1343,6 +1367,8 @@ header {
     }
 
     p {
+        // display: none;
+
         position: relative;
         width: 90%;
         text-align: left;
@@ -1380,6 +1406,7 @@ header {
     }
 
     .spec__offer__h4 {
+        // display: none;
         position: absolute;
         width: 100%;
         top: 10%;
@@ -1422,6 +1449,7 @@ header {
     }
 
     .spec__offer__p2 {
+
         position: absolute;
         width: 100%;
         top: 70%;
@@ -1442,6 +1470,8 @@ header {
     }
 
     .spec__offer__a {
+
+
         position: absolute;
         width: 100%;
         top: 85%;
@@ -1466,6 +1496,12 @@ header {
 
 }
 
+.orange__hr {
+    width: 100%;
+    height: 6px;
+    background: $orange-color;
+}
+
 .pravna__lica__h3 {
     width: 100%;
     text-align: center;
@@ -1473,5 +1509,83 @@ header {
 }
 
 .is-visible {
-    display: block;
+    display: block !important;
+    // visibility: visible;
+}
+
+.special__offer {
+    width: 100%;
+    height: auto;
+    // height: 70vh;
+    margin: auto;
+
+    // background-color: red;
+
+    h4 {
+        text-align: center;
+        font-size: $slider-h2;
+    }
+}
+
+.special__offer__slider {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+#lightSlider2 {
+    height: 100%;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// --------------------------------------
+
+// #container {
+//     margin: 55vh 0;
+//     padding: 50px;
+
+//     outline: 1px dashed orange;
+// }
+
+// #block {
+//     padding: 10px;
+
+//     border: 1px solid black;
+
+//     font-family: Helvetica;
+// }
+// ----------------=================
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background: url('/images/special-offer/bkg_footer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 6px solid $orange-color;
+    margin-top: 60px;
+
+    .footer__top {
+        width: 100%;
+        height: 80%;
+    }
+
+    .footer__bootom {
+        width: 100%;
+        height: 20%;
+    }
+
+    .hr {
+        width: 70%;
+        margin: auto;
+        height: 1px;
+        background-color: #414141;
+    }
+
 }
