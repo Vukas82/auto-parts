@@ -232,11 +232,27 @@ $(function () {
         display: 'block'
     })
     var containerScene = new ScrollMagic.Scene({
-            triggerElement: '#trigger1',
+            triggerElement: '#trigger1'
         })
         .setTween(blockTween)
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller);
+});
+
+$(function () {
+    var controller2 = new ScrollMagic.Controller();
+
+    var blockTween2 = new TweenMax.to('#block2', .1, {
+        // color: 'red',
+        display: 'block'
+    })
+
+    var containerScene2 = new ScrollMagic.Scene({
+            triggerElement: '#trigger2'
+        })
+        .setTween(blockTween2)
+        // .addIndicators()
+        .addTo(controller2);
 });
 // =============================================================
 //     .setPin('#block')
