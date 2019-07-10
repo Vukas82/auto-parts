@@ -235,7 +235,7 @@ $(function () {
             triggerElement: '#trigger1',
         })
         .setTween(blockTween)
-        // .addIndicators()
+        .addIndicators()
         .addTo(controller);
 });
 // =============================================================
