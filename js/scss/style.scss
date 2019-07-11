@@ -112,7 +112,7 @@ header {
 }
 
 .arrow {
-    margin-left: 10px;
+    margin-right: 10px;
 
     img {
         width: 12px;
@@ -143,6 +143,7 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
+    font-size: 13px;
 }
 
 .dropdown-content::before {
