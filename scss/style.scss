@@ -98,6 +98,7 @@ header {
                 color: #a7a7a7;
                 padding: 1rem 1rem;
                 font-weight: 200;
+                background-color: #181818;
             }
         }
     }
@@ -147,7 +148,7 @@ header {
 .dropdown-content::before {
     content: '';
     display: inline-block;
-    // background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.1);
     background-color: transparent;
     min-width: 160px;
     height: 35px;
@@ -159,7 +160,8 @@ header {
     // top: 60px;
     // left: 10px;
     // background-color: rgba(0, 0, 0, 0.9);
-    background-color: #181818;
+    // background-color: #181818;
+    background-color: transparent;
     min-width: 160px;
     // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -246,9 +248,14 @@ header {
 }
 
 .circle__dropdown-content {
+    // position: absolute;
+    top: 29px;
+    // left: 10px;
 
     a {
         color: #a7a7a7;
+        background-color: #181818;
+
     }
 
     .dropdown-content__inner__3::before {
@@ -266,7 +273,7 @@ header {
     .dropdown-content__inner__3 {
         display: none;
         position: absolute;
-        top: 23%;
+        top: 38px;
         left: 103%;
         // background-color: rgba(0, 0, 0, 0.9);
         background-color: #181818;
@@ -792,6 +799,7 @@ header {
             color: #fff;
             font-size: 30px;
             text-align: center;
+            transition: all .5s;
         }
 
     }
@@ -842,13 +850,14 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-
         position: relative;
 
         h3 {
             color: #fff;
             font-size: 30px;
             text-align: center;
+            transition: all .5s;
+
         }
     }
 
@@ -870,8 +879,8 @@ header {
 
     .offerr__2__inner:hover h3 {
         color: $orange-color;
-        transition: all 1s ease;
-        transform: scale(1.1);
+        // transition: all 1s;
+        transform: scale(1.1)
     }
 }
 
@@ -903,6 +912,8 @@ header {
             font-size: 30px;
             text-align: center;
             cursor: pointer;
+            transition: all .5s;
+
         }
 
     }
@@ -925,7 +936,7 @@ header {
 
     .offerr__3__inner:hover h3 {
         color: $orange-color;
-        transition: all 1s ease;
+        // transition: all 1s ease;
         transform: scale(1.1);
     }
 
@@ -985,7 +996,12 @@ header {
         position: absolute;
         left: 50%;
         top: 40%;
-        transform: translateX(-50%) translateY(-50%)
+        transform: translateX(-50%) translateY(-50%);
+        transition: all 2s;
+    }
+
+    .welcome__logo:hover {
+        opacity: 1;
     }
 }
 
