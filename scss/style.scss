@@ -55,8 +55,6 @@ header {
 .header__bottom__wraper {
     width: 90%;
     height: 100%;
-    // background: grey;
-
     margin: auto;
     position: relative;
     display: flex;
@@ -97,7 +95,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: #ffffff;
+                color: #a7a7a7;
                 padding: 1rem 1rem;
                 font-weight: 200;
             }
@@ -160,7 +158,8 @@ header {
     position: absolute;
     // top: 60px;
     // left: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: #181818;
     min-width: 160px;
     // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -183,7 +182,8 @@ header {
     position: absolute;
     top: 73%;
     left: 103%;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: #181818;
     min-width: 160px;
     // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -206,14 +206,14 @@ header {
     position: absolute;
     top: 46%;
     left: 103%;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: #181818;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -248,7 +248,7 @@ header {
 .circle__dropdown-content {
 
     a {
-        color: #fff;
+        color: #a7a7a7;
     }
 
     .dropdown-content__inner__3::before {
@@ -268,9 +268,10 @@ header {
         position: absolute;
         top: 23%;
         left: 103%;
-        background-color: rgba(0, 0, 0, 0.9);
+        // background-color: rgba(0, 0, 0, 0.9);
+        background-color: #181818;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
 
     }
@@ -933,7 +934,8 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: #181818;
 }
 
 .welcome {
