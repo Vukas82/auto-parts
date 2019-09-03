@@ -104,3 +104,46 @@ $(function () {
 // });
 
 // });
+
+// search bar .active__search__box  right__social
+function searchBarToogle() {
+
+    var x = document.getElementById("search__box");
+    var y = document.getElementById("left__nav");
+    var y1 = document.getElementById("left__nav__1");
+    var y2 = document.getElementById("left__nav__2");
+    var y3 = document.getElementById("left__nav__3");
+    var z = document.getElementById("active__search");
+    var q = document.getElementById("logo");
+
+    var intViewportWidth = window.innerWidth;
+
+
+
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.style.display = "none";
+        y1.style.display = "none";
+        y2.style.display = "none";
+        y3.style.display = "none";
+        z.style.display = "none";
+        // z.style.visibility = "hidden";
+        q.style.display = "none";
+
+    } else {
+        x.style.display = "none";
+        y.style.display = "flex";
+        y1.style.display = "flex";
+        y2.style.display = "flex";
+        y3.style.display = "flex";
+        z.style.display = "flex";
+        // z.style.visibility = "visible";
+        q.style.display = "flex";
+
+    }
+
+    if (y.style.display === "none" && intViewportWidth > 500) {
+        q.style.display = "flex";
+    }
+
+}

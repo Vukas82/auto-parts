@@ -1,8 +1,12 @@
 $orange-color: #fc8702;
 $orange-color-opacity: #fc87029d;
 $primary-color: #e0e0e0;
+$hoverNav: #f3f5f9;
+$headerText: #2e2d2c;
+
 $h2-nav: 1rem;
 $slider-h2: 3rem;
+
 
 body {
     box-sizing: border-box;
@@ -17,7 +21,6 @@ body {
 
     // background-color: transparent;
 
-    // overflow-x: hidden;
 
     h2 {
         margin: 0;
@@ -76,8 +79,8 @@ header {
 }
 
 .left {
-    // width: 50%;
-    float: left;
+    width: 40%;
+    // float: left;
     // background-color: green;
     display: flex;
     flex-direction: row;
@@ -348,7 +351,7 @@ header {
 }
 
 .right__social {
-    // width: 30%;
+    width: 60%;
     float: left;
     height: 50px;
     display: flex;
@@ -356,6 +359,9 @@ header {
     // justify-content: space-around;
     justify-content: space-between;
     align-items: center;
+
+    // position: absolute;
+    // right: 5%;
 
     ul {
         display: inline;
@@ -392,6 +398,13 @@ header {
 
 // .phone:hover {
 //     fill: #fc8902;
+// }
+.phone__number__small {
+    display: none;
+}
+
+// #myHeader>div>div>nav.right__social>ul>li:nth-child(1)>a>h2 {
+//     display: none !important;
 // }
 
 .phone__number:hover {
@@ -444,12 +457,38 @@ header {
     height: 18px;
 }
 
+.active__search {
+    img {
+        filter: invert(1);
+        width: 18px;
+        height: 18px;
+    }
+}
+
 .search__form__wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
+.search__form__wrap__small {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    // background: greenyellow;
+    // width: 70px;
+    // height: 25px;
+
+    // position: absolute;
+    // left: 50%;
+    li {
+        list-style: none;
+    }
+}
+
+
 
 .search__action {
     height: 50px;
@@ -458,7 +497,7 @@ header {
 
 .search__field {
     height: 35px;
-    width: 240px;
+    width: 220px;
     border-radius: 30px;
     // border-color: rgba(255, 255, 255, 0.15) !important;
     background-color: rgba(255, 255, 255, 0.08) !important;
@@ -1183,7 +1222,8 @@ header {
 .about__logo {
     width: 100%;
     height: 300px;
-    background: url('/images/kribzon__logo__transparent.svg');
+    // background: url('/images/kribzon__logo__transparent.svg');
+    background: url('/images/kribzon__logo__transparent_black\ font.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1986,3 +2026,162 @@ header {
     display: none;
     position: relative;
 }
+
+// mediaQeries
+@media(max-width: 1199.98px) {
+
+    .phone__number {
+        display: none;
+    }
+
+    .phone__number__small {
+        display: inline;
+    }
+
+    .search__form__wrap {
+        display: none;
+    }
+
+    .search__form__wrap__small {
+        display: flex;
+    }
+
+
+    .left {
+        width: 50%;
+    }
+
+    .right__social {
+        width: 50%;
+    }
+
+    .active .inner__1 {
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .inner__message {
+            p {
+                font-size: 2.5rem;
+
+            }
+        }
+
+        .inner__p {
+            p {
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+    .grid {
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .about__all {
+        h3 {
+            padding-left: 25px;
+        }
+    }
+
+    .o__nama {
+        h3 {
+            padding-left: 0px;
+        }
+    }
+
+    .about__logo {
+        height: 250px;
+    }
+
+    // .header__bottom__wraper {
+    //     flex-direction: row-reverse;
+    // }
+}
+
+.active__search__box {
+    width: 100%;
+    padding-left: 200px;
+}
+
+// @media (max-width: 1250px) {
+//     .lSSlideOuter .lSPager.lSpg {
+//         display: none;
+//     }
+// }
+
+
+// search box from travell
+.search__box {
+
+    display: none;
+
+    width: calc(100% - 225px);
+    height: 100%;
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .search__container {
+        height: 70%;
+        width: 70%;
+        position: absolute;
+        right: 100px;
+        padding-left: 100px;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        background: $hoverNav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+
+
+        input {
+            width: 90%;
+            height: 100%;
+            background: $hoverNav;
+            border: none;
+            padding: 0;
+            outline: none;
+            font-size: 14px;
+            // font-family: $font-Regular;
+            color: $headerText;
+        }
+
+        button {
+            width: 30px;
+            height: 20px;
+            outline: none;
+            border: none;
+            background: $hoverNav;
+            border-radius: 6px;
+
+        }
+
+        span {
+            width: 30px;
+            height: 15px;
+            margin-right: 1rem;
+            cursor: pointer;
+            // visibility: visible
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// search box from travell

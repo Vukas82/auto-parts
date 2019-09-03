@@ -31,7 +31,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script> -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
 
     <link rel="shortcut icon" href="/images/favicon (1).ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon (1).ico" type="image/x-icon">
@@ -88,7 +89,7 @@
                 <div class="logo">
                     <img src="/images/kribzon__logo__transparent.svg" alt="">
                 </div>
-                <nav class="left">
+                <nav id="left__nav" class="left">
                     <ul>
                         <li>
                             <!-- <a href="#">
@@ -206,7 +207,7 @@
                 </nav>
 
                 <nav class="right__social">
-                    <ul>
+                    <ul id="left__nav__1">
                         <li><a href="#">
                                 <!-- <h2><span><img class="phone" src="/images/old-handphone - Copy.svg" alt=""></span> -->
                                 <h2 class="phone__number"><span>
@@ -234,6 +235,32 @@
                                     </span>
                                     065 123
                                     456</h2>
+                                <!-- phone for smaller screen -->
+                                <h2 style="" class="phone__number__small"> <a href="065 123456"></a><span>
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <!DOCTYPE svg
+                                            PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                        <svg version="1.1" class="phone" id="Capa_1" fill="#fff"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.877px"
+                                            height="16.877px" viewBox="0 0 16.877 16.877"
+                                            style="enable-background:new 0 0 16.877 16.877;" xml:space="preserve">
+                                            <g>
+                                                <path d="M5.301,5.587L1.404,1.688c0.503-0.503,1.005-1.007,1.509-1.511C3.146-0.056,3.522-0.06,3.756,0.17l3.036,3.039
+                                                c0.232,0.232,0.232,0.614-0.003,0.848L6.124,4.721L5.505,5.34C5.429,5.417,5.36,5.499,5.301,5.587z M8.507,11.938
+                                                c-0.638-0.549-1.25-1.132-1.844-1.725C6.07,9.616,5.489,9.006,4.939,8.365c-0.45-0.52-0.538-1.273-0.303-1.907L0.636,2.457
+                                                c-0.931,0.957-0.812,3.33,0.208,5.415c0.438,0.902,1.006,1.716,1.593,2.49c0.586,0.768,1.229,1.494,1.906,2.176
+                                                c0.679,0.681,1.401,1.327,2.171,1.913c0.774,0.589,1.59,1.153,2.486,1.59c2.088,1.019,4.462,1.131,5.418,0.199l-4.001-4.001
+                                                C9.783,12.474,9.029,12.387,8.507,11.938z M16.702,13.119l-3.036-3.037c-0.233-0.23-0.615-0.23-0.848,0.003h-0.002l-0.667,0.666
+                                                l-0.615,0.618c-0.076,0.076-0.159,0.143-0.247,0.205l3.896,3.898c0.504-0.505,1.007-1.007,1.512-1.51
+                                                C16.93,13.729,16.935,13.352,16.702,13.119z" />
+                                            </g>
+                                        </svg>
+
+                                    </span>
+                                </h2>
+                                <!-- phone for smaller screen -->
                             </a></li>
                         <li><a href="#">
                                 <!-- <h2><span><img class="facebook" src="/images/facebook-logo.svg" alt=""></span></h2> -->
@@ -319,18 +346,45 @@
                             </button>
                         </form>
                     </div>
-                    <div class="basket">
+                    <!-- search box for small screan -->
+                    <div id="search__box" class="search__box" style="display:none">
+                        <div class="search__container">
+                            <form action="/action__page.php">
+                                <button type="submit"><img src="/images/musica-searcher.svg" alt="search bar"></button>
+
+                                <input type="text" placeholder="Search text" name="search">
+                                <span onclick="searchBarToogle()"><img src="/images/icon-x.svg" alt="close"></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search box for small screan -->
+                    <div class="search__form__wrap__small">
+
+                        <!-- <button type="submit" class="search__submit"> -->
+                        <!-- <img onclick="searchBarToogle()" class="search__submit__img" src="/images/musica-searcher.svg"
+                            alt=""> -->
+
+                        <li id="active__search" class="active__search">
+                            <a href="#">
+                                <img onclick="searchBarToogle()" src="/images/musica-searcher.svg" alt="search">
+                            </a>
+                        </li>
+                        <!-- </button> -->
+
+                    </div>
+                    <div id="left__nav__2" class="basket">
                         <span><img class="basket" src="/images/shopping-cart - Copy.svg" alt=""></span>
                     </div>
-                    <div class="suma">
+                    <div id="left__nav__3" class="suma">
                         <span class="suma__span">
                             $0.00</span>
                     </div>
                 </nav>
-                </!-->
-                <!-- end of navigation  -->
             </div>
-            <!-- end of header  -->
+
+            <!-- end of navigation  -->
+        </div>
+        <!-- end of header  -->
 
     </header>
 
