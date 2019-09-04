@@ -2149,6 +2149,14 @@ header {
 
     }
 
+    .active .inner__1 .inner__h__right h2 {
+        padding-left: 40px;
+    }
+
+    .active .inner__p {
+        margin-top: 20px
+    }
+
     .search__form__wrap__small {
         position: absolute;
         right: 120px;
@@ -2186,11 +2194,65 @@ header {
 
     .search__box .search__container {
         width: 50% !important;
+        right: 50% !important;
+        transform: translateX(35%);
     }
-
 
     .small-drop-btn {
         right: 0px;
+    }
+
+    .active .inner__mail {
+        display: none;
+    }
+
+    .inner__p {
+        display: none;
+    }
+
+    .active .inner__1 h2 {
+        font-size: 1.5rem;
+    }
+
+
+
+    .active .inner__1 .inner__h__right h2 {
+        padding-left: 30px;
+    }
+
+    .active .inner__1 .inner__message p {
+        font-size: 1.5rem;
+    }
+
+    .active .inner__1 {
+        top: 220px;
+    }
+
+    .offer {
+        width: 98%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .about__all a {
+        float: right;
+    }
+
+    .offer__1 {
+        position: relative;
+        width: 100%;
+    }
+
+    .offer__2 {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .offer__3 {
+        position: relative;
+        width: 100%;
+        left: 0;
     }
 
     .grid {
@@ -2225,6 +2287,28 @@ header {
     // .small-drop-btn {
     //     right: 0px;
     // }
+    .search__box .search__container {
+        height: 30px !important;
+    }
+
+    .search__box form span {
+        margin-right: .2rem !important;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        position: absolute;
+        left: -30px;
+        top: -39px;
+    }
+
+    .logo img {
+        height: 100%;
+        width: 150px;
+    }
 
     .grid {
         grid-template-columns: 1fr;
