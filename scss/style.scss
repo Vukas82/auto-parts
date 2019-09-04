@@ -7,6 +7,7 @@ $headerText: #2e2d2c;
 $h2-nav: 1rem;
 $slider-h2: 3rem;
 
+@import "responsiveNav";
 
 body {
     box-sizing: border-box;
@@ -2084,7 +2085,16 @@ header {
     .about__all {
         h3 {
             padding-left: 25px;
+            font-size: 1rem;
         }
+    }
+
+    .about__all h3::after {
+        left: 20%;
+    }
+
+    .o__nama h3::after {
+        left: 15%;
     }
 
     .o__nama {
@@ -2102,16 +2112,138 @@ header {
     // }
 }
 
+// ==================================== 992px ===========================================================
+
+
+
+@media (min-width: 991.98px) {
+    #nav-small {
+        display: none;
+    }
+
+    .small-drop-btn {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+
+    #left__nav {
+        display: none !important;
+
+    }
+
+    #left__nav__1 {
+        display: none !important;
+
+    }
+
+    #left__nav__2 {
+        display: none !important;
+
+    }
+
+    #left__nav__3 {
+        display: none !important;
+
+    }
+
+    .search__form__wrap__small {
+        position: absolute;
+        right: 120px;
+    }
+
+    .small-drop-btn {
+        margin-right: 15px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 700px;
+    }
+
+    .img__1__7 {
+        display: none;
+    }
+
+    .grid__2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "about__1 about__2"
+            "about__1 about__3"
+            "about__4 about__5";
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .search__form__wrap__small {
+        right: 80px;
+    }
+
+    .search__box .search__container {
+        width: 50% !important;
+    }
+
+
+    .small-drop-btn {
+        right: 0px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        height: 1400px;
+    }
+
+    .img__1__7 {
+        display: grid;
+    }
+
+    .grid__2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: "about__1"
+            "about__2"
+            "about__3"
+            "about__4"
+            "about__5";
+    }
+}
+
+@media (max-width: 595.98px) {
+    // .search__form__wrap__small {
+    //     right: 80px;
+    // }
+
+    // .search__box .search__container {
+    //     width: 50% !important;
+    // }
+
+
+    // .small-drop-btn {
+    //     right: 0px;
+    // }
+
+    .grid {
+        grid-template-columns: 1fr;
+        // height: 1400px;
+        height: 2800px;
+    }
+
+}
+
+
+
+// ===============================================================================================
+
 .active__search__box {
     width: 100%;
     padding-left: 200px;
 }
 
-// @media (max-width: 1250px) {
-//     .lSSlideOuter .lSPager.lSpg {
-//         display: none;
-//     }
-// }
+
 
 
 // search box from travell
