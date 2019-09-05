@@ -2188,6 +2188,10 @@ header {
 }
 
 @media (max-width: 767.98px) {
+    .active__search__hidden {
+        display: none !important;
+    }
+
     .search__form__wrap__small {
         right: 80px;
     }
@@ -2203,6 +2207,10 @@ header {
     }
 
     .active .inner__mail {
+        display: none;
+    }
+
+    .inner__message {
         display: none;
     }
 
