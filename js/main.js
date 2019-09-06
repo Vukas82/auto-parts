@@ -30,7 +30,21 @@ function stickyHeader() {
 //     orientation: 'right'
 // });
 
+// removing id for trigger animation on futter becaose of same error on that script when is screen snaller ( on responsive mod)
+let size = window.innerWidth;
+let changeId = document.getElementById('trigger2');
 
+if (size <= 998) {
+    changeId.removeAttribute('id');
+}
+
+
+
+// let list = document.querySelector('ul');
+// if (list.hasAttribute('id')) {
+//     console.log('list has an id');
+//     list.removeAttribute('id');
+// };
 
 // ===========================================================
 $(function () {
@@ -54,9 +68,8 @@ $(function () {
         .setTween(blockTween)
         // .addIndicators()
         .addTo(controller);
-});
 
-$(function () {
+
     var controller2 = new ScrollMagic.Controller();
 
     var blockTween2 = new TweenMax.to('#block2', .1, {
@@ -70,7 +83,24 @@ $(function () {
         .setTween(blockTween2)
         // .addIndicators()
         .addTo(controller2);
+
 });
+
+// $(function () {
+//     var controller2 = new ScrollMagic.Controller();
+
+//     var blockTween2 = new TweenMax.to('#block2', .1, {
+//         // color: 'red',
+//         display: 'block'
+//     })
+
+//     var containerScene2 = new ScrollMagic.Scene({
+//             triggerElement: '#trigger2'
+//         })
+//         .setTween(blockTween2)
+//         // .addIndicators()
+//         .addTo(controller2);
+// });
 // =============================================================
 //     .setPin('#block')
 

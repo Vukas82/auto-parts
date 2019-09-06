@@ -2328,7 +2328,21 @@ header {
         height: 2800px;
     }
 
+    .category {
+        display: none;
+    }
 
+    .logo__footer__wraper {
+        width: 100%;
+    }
+
+    .footer__botom {
+        padding-top: 0px !important;
+    }
+
+    .footer__botom__wraper {
+        flex-direction: column;
+    }
 }
 
 // ===============================================================================================
