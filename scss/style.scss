@@ -2223,9 +2223,6 @@ header {
         display: none;
     }
 
-    .active .inner__1 h2 {
-        // font-size: 1.5rem;
-    }
 
 
 
@@ -2316,11 +2313,21 @@ header {
         width: 150px;
     }
 
+    .inner__h__right {
+        top: 200px !important;
+    }
+
+    .inner__1 h2 {
+        font-size: 1.8rem !important;
+    }
+
+
     .grid {
         grid-template-columns: 1fr;
         // height: 1400px;
         height: 2800px;
     }
+
 
 }
 
