@@ -2224,13 +2224,13 @@ header {
     }
 
     .active .inner__1 h2 {
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
     }
 
 
 
     .active .inner__1 .inner__h__right h2 {
-        padding-left: 30px;
+        padding-left: 100px;
     }
 
     .active .inner__1 .inner__message p {
@@ -2238,7 +2238,9 @@ header {
     }
 
     .active .inner__1 {
-        top: 220px;
+        bottom: 0px;
+        height: 10%;
+        top: unset;
     }
 
     .offer {
