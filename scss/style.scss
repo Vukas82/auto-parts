@@ -2342,7 +2342,8 @@ header {
     }
 
     .footer__botom__wraper {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        height: 98px;
     }
 }
 
