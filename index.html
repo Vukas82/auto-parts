@@ -90,8 +90,8 @@
                         </li>
                     </ul>
 
-                    <div class="dropdown" aria-labelledby="labeldiv">
-                        <button class="dropbtn">
+                    <div class="dropdown">
+                        <button class="dropbtn" aria-label="menu button" title="menu button">
                             <div class="circle">
                                 <div class="dot"></div>
                                 <div class="dot__2"></div>
@@ -142,7 +142,7 @@
                                         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                         <!DOCTYPE svg
                                             PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                        <svg version="1.1" class="phone" id="Capa_1" fill="#fff"
+                                        <svg version="1.1" class="phone" id="Capa" fill="#fff"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.877px"
                                             height="16.877px" viewBox="0 0 16.877 16.877"
@@ -189,7 +189,7 @@
                                 </h2>
                                 <!-- phone for smaller screen -->
                             </a></li>
-                        <li><a href="#">
+                        <li><a href="#" aria-label="facebook">
                                 <h2><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
                                         <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
@@ -209,7 +209,7 @@
 
                                     </span></h2>
                             </a></li>
-                        <li><a href="#">
+                        <li><a href="#" aria-label="twitter">
                                 <h2><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
                                         <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
@@ -233,7 +233,7 @@
 
                                     </span></h2>
                             </a></li>
-                        <li><a href="#">
+                        <li><a href="#" aria-label="instagram">
                                 <h2><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
                                         <!DOCTYPE svg
@@ -265,12 +265,17 @@
                             </a></li>
                     </ul>
                     <div class="search__form__wrap">
-                        <form role="search" method="GET" class="search__action" action="#">
-                            <input type="text" class="search__field" placeholder="Pretraga" value name="s">
-                            <button type="submit" class="search__submit">
-                                <img class="search__submit__img" src="/images/musica-searcher.svg" alt="search">
-                            </button>
-                        </form>
+                        <label for="search-parts">
+                            <form id="search-parts" role="search" method="GET" class="search__action" action="#"
+                                aria-label="search parts">
+                                <input type="text" class="search__field" placeholder="Pretraga" value="search__field"
+                                    name="search__field">
+                                <button type="submit" class="search__submit">
+                                    <img class="search__submit__img" src="/images/musica-searcher.svg" alt="search">
+                                </button>
+                            </form>
+                        </label>
+
                     </div>
                     <!-- search box for small screan -->
                     <div id="search__box" class="search__box" style="display:none">
@@ -429,8 +434,13 @@
                         <p>GARANTOVANO</p>
                     </div>
                     <div class="inner__mail">
-                        <input type="email" class="inner__input" placeholder="Imate pitanje" required>
-                        <input type="submit" class="inner__submit" value="Pošalji" disabled="disabled">
+                        <label for="typeMail">
+                            <input id="typeMail" type="email" class="inner__input" placeholder="Imate pitanje" required>
+                        </label>
+                        <label for="sendMail">
+                            <input id="sendMail" type="submit" class="inner__submit" value="Pošalji"
+                                disabled="disabled">
+                        </label>
                     </div>
                 </div>
             </li>
