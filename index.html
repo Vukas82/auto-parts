@@ -6,101 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Auto parts</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
-
-    <script src="/js/TweenMax.js"></script>
-    <!-- <script src="path/to/js/jquery.min.js"></script> -->
-    <!-- should be replaced with minified version when development is finished -->
+    <script src="/js/TweenMax.min.js"></script>
     <script src="/js/ScrollMagic.js"></script>
-    <!-- should be removed when development is finished -->
-    <!-- <script src="path/to/js/jquery.scrollmagic.debug.js"></script> -->
-    <!-- <script src="/path/to/noframework.waypoints.min.js"></script> -->
-    <script src="/js/lib/noframework.waypoints.min.js"></script>
     <script src="/js/lib/animation.gsap.js"></script>
-
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script> -->
-
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
-
     <link rel="shortcut icon" href="/images/favicon (1).ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon (1).ico" type="image/x-icon">
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
     <!-- ligh slider -->
     <script src="https://code.jquery.com/jquery-1.11.0.js"
         integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script> -->
     <script src="/js/lightslider.js"></script>
-    <!-- <script src="/js/waypoint.js"></script> -->
-    <!-- <script src="/js/noframework.waypoints.js"></script> -->
-
-
-    <!-- scroll controlller -->
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
-
-
 </head>
 
 <body>
     <header id="myHeader">
-        <!-- <div class="header__top">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <div class="adresa"> <span>inkonica</span>
-                <h2>ADRESA</h2>
-            </div>
-            <div class="radno__vreme"> <span>inkonica</span>
-                <h2>RADNO radno__vreme</h2>
-            </div>
-            <div class="telefon"> <span>inkonica</span>
-                <h2>KONTAKT</h2>
-            </div>
-            <div class="btm__mail">
-                <h2>mail</h2>
-            </div>
-        </div> -->
-
-
-
         <div class="header__bottom">
             <div class="header__bottom__wraper">
                 <div class="logo">
-                    <img src="/images/kribzon__logo__transparent.svg" alt="">
+                    <a href="#">
+                        <img src="/images/kribzon__logo__transparent.svg" alt="kribzon-logo-img">
+                    </a>
                 </div>
                 <nav id="left__nav" class="left">
                     <ul>
                         <li>
-                            <!-- <a href="#">
-                                <h2>HOME</h2>
-                                <span class="arrow"><img src="/images/down-arrow.svg" alt=""></span>
-                            </a> -->
                             <div class="dropdown">
                                 <button class="dropbtn">
                                     <h2>HOME</h2>
                                 </button>
-                                <span class="arrow"><img src="/images/down-arrow.svg" alt=""></span>
+                                <span class="arrow"><img src="/images/down-arrow.svg" alt="arrow"></span>
                                 <div class="dropdown-content">
                                     <a href="#">Link 1</a>
                                     <a href="#">Link 2</a>
@@ -109,7 +46,7 @@
                                     <div id="myHeader__dropdown" class="dropdown__inner">
                                         <a href="#" class="dropbtn__inner">Link 3
                                             <span class="arrow arrow__inner"><img src="/images/down-arrow.svg"
-                                                    alt=""></span>
+                                                    alt="arrow"></span>
                                         </a>
                                         <div class="dropdown-content__inner">
                                             <a href="#">Link 4</a>
@@ -123,15 +60,11 @@
                         </li>
 
                         <li>
-                            <!-- <a href="#">
-                                <h2>NASA PONUDA</h2>
-                                <span class="arrow"><img src="/images/down-arrow.svg" alt=""></span>
-                            </!-->
                             <div class="dropdown">
                                 <button class="dropbtn">
                                     <h2>NASA PONUDA</h2>
                                 </button>
-                                <span class="arrow"><img src="/images/down-arrow.svg" alt=""></span>
+                                <span class="arrow"><img src="/images/down-arrow.svg" alt="arrow"></span>
                                 <div class="dropdown-content">
                                     <a href="#">Link 7</a>
                                     <!-- <a href="#">Link 3</a> -->
@@ -139,7 +72,7 @@
                                     <div class="dropdown__inner">
                                         <a href="#" class="dropbtn__inner">Link 8
                                             <span class="arrow arrow__inner"><img src="/images/down-arrow.svg"
-                                                    alt=""></span>
+                                                    alt="arrow"></span>
                                         </a>
                                         <div class="dropdown-content__inner__2">
                                             <a href="#">Link 10</a>
@@ -154,14 +87,6 @@
                         </li>
                     </ul>
 
-
-
-
-
-
-
-
-
                     <div class="dropdown">
                         <button class="dropbtn">
                             <div class="circle">
@@ -174,7 +99,8 @@
                         <div class="dropdown-content circle__dropdown-content">
                             <div class="dropdown__inner">
                                 <a href="#" class="dropbtn__inner">Link 13
-                                    <span class="arrow arrow__inner"><img src="/images/down-arrow.svg" alt=""></span>
+                                    <span class="arrow arrow__inner"><img src="/images/down-arrow.svg"
+                                            alt="arrow"></span>
                                 </a>
                                 <div class="dropdown-content__inner__3">
                                     <a href="#">Link 16</a>
@@ -187,7 +113,8 @@
 
                             <div class="dropdown__inner">
                                 <a href="#" class="dropbtn__inner">Link 15
-                                    <span class="arrow arrow__inner"><img src="/images/down-arrow.svg" alt=""></span>
+                                    <span class="arrow arrow__inner"><img src="/images/down-arrow.svg"
+                                            alt="arrow"></span>
                                 </a>
                                 <div class="dropdown-content__inner__2">
                                     <a href="#">Link 19</a>
@@ -199,9 +126,6 @@
 
                         </div>
                     </div>
-
-
-
 
 
                 </nav>
@@ -238,7 +162,7 @@
                                 <!-- phone for smaller screen -->
                                 <h2 style="" class="phone__number__small"> <a href="065 123456"></a><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
                                         <!DOCTYPE svg
                                             PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                                         <svg version="1.1" class="phone" id="Capa_1" fill="#fff"
@@ -263,10 +187,9 @@
                                 <!-- phone for smaller screen -->
                             </a></li>
                         <li><a href="#">
-                                <!-- <h2><span><img class="facebook" src="/images/facebook-logo.svg" alt=""></span></h2> -->
                                 <h2><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
                                         <!DOCTYPE svg
                                             PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                                         <svg version="1.1" id="Capa_1" class="facebook"
@@ -286,7 +209,7 @@
                         <li><a href="#">
                                 <h2><span>
                                         <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
                                         <svg version="1.1" id="Capa_1" class="twitter"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -342,7 +265,7 @@
                         <form role="search" method="GET" class="search__action" action="#">
                             <input type="text" class="search__field" placeholder="Pretraga" value name="s">
                             <button type="submit" class="search__submit">
-                                <img class="search__submit__img" src="/images/musica-searcher.svg" alt="">
+                                <img class="search__submit__img" src="/images/musica-searcher.svg" alt="search">
                             </button>
                         </form>
                     </div>
@@ -373,7 +296,7 @@
 
                     </div>
                     <div id="left__nav__2" class="basket">
-                        <span><img class="basket" src="/images/shopping-cart - Copy.svg" alt=""></span>
+                        <span><img class="basket" src="/images/shopping-cart - Copy.svg" alt="shopping-cart"></span>
                     </div>
                     <div id="left__nav__3" class="suma">
                         <span class="suma__span">
@@ -400,32 +323,12 @@
 
     <!-- nav menu za small screen -->
     <nav id="nav-small" class="navbar2 nav-small" style="">
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="/images/logo.svg" alt="logo">
-        </div>
+        </div> -->
 
 
         <ul id="navbar" class="navbar-list-expanded" style="display: none">
-            <!-- <li class="dropdown">
-
-                <a href="#">New Look</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-            <li> <a class="nav-li-small " href="#">Dresses</a></li>
-            <li> <a class="nav-li-small " href="#">Skirts</a></li>
-            <li> <a class="nav-li-small " href="#">Shirts</a></li>
-            <li> <a class="nav-li-small " href="#">Sale</a></li>
-            <li><a href="#"><span><img class="bag__responsive" src="./images/shopping-cart.svg" alt=""></span></a>
-            </li>
-            <li>
-                <a href="#"><span>Sign in</span></a>
-            </li>
-            <li><a href="#"><span><img src="/images/search.svg" alt=""></span></a></li>
-            <li><a href="#"><span>EN</span></a></li> -->
 
             <!-- <ul id="left__nav" class="left__nav"> -->
             <li>
@@ -494,14 +397,6 @@
             <!-- </ul> -->
 
         </ul>
-        <!-- <div class="small__bucket">
-            <img src="/images/shopping-cart.svg" alt="">
-        </div>
-        <div class="small-drop-btn" aria-expanded="false" id="btn" onclick="toggle('navbar', 'btn')">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </div> -->
     </nav>
     <!-- ==========================end small nav -->
 
@@ -514,20 +409,9 @@
                     <source media="(max-width: 650px)" srcset="images/originalni-auto-delovi-kribzon-responsive.jpg">
                     <!-- <source media="(max-width: 650px)" srcset="images/krib.jpg"> -->
                     <!-- <source media="(min-width: 465px)" srcset="img_white_flower.jpg"> -->
-                    <img class="grow__up thumbnail" src="images/slide-1-bg.jpg" alt="originalni-auto-delovi-kribzon">
+                    <img class="grow__up thumbnail" src="images/main_slider/kribzon-auto-delovi-slider1.jpg"
+                        alt="originalni-auto-delovi-kribzon">
                 </picture>
-
-                <!-- <picture>
-                    <source media="(min-width: 799px)" srcset="/images/slide-1-bg.jpg">
-                    <source media="(max-width: 800px)" srcset="/images/slide-1-bg.jpg"> -->
-                <!-- <img src="/images/responsive.jpg" alt="Chris standing up holding his daughter Elva"> -->
-                <!-- <img class="grow__up thumbnail" src="images/slide-1-bg.jpg" -->
-                <!-- alt="Chris standing up holding his daughter Elva"> -->
-                <!-- </picture> -->
-
-                <!-- <img class="grow__up thumbnail" src="images/krib.jpg" -->
-
-
                 <div class="inner__1 inner__responsive">
                     <div id="inner__h__left__1" class="inner__h__left" style="">
                         <h2>ORIGINALNI</h2>
@@ -552,22 +436,10 @@
 
 
                 <picture>
-                    <!-- <source media="(max-width: 650px)" srcset="images/originalni-auto-delovi-kribzon-responsive.jpg"> -->
                     <source media="(max-width: 650px)" srcset="images/originalni-auto-delovi-kribzon-responsive__2.jpg">
-                    <!-- <source media="(min-width: 465px)" srcset="img_white_flower.jpg"> -->
-                    <img class="grow__up thumbnail" src="images/slide-1-bg.jpg" alt="originalni-auto-delovi-kribzon">
+                    <img class="grow__up thumbnail" src="images/main_slider/kribzon-auto-delovi-slider1.jpg"
+                        alt="originalni-auto-delovi-kribzon">
                 </picture>
-
-                <!-- <picture> -->
-                <!-- <source media="(max-width: 799px)" srcset="images/krib.jpg"> -->
-                <!-- <source media="(max-width: 800px)" srcset="/images/home1-slide-2-1-1.jpg"> -->
-                <!-- <img class="grow__up thumbnail" src="/images/slide-1-bg.jpg" -->
-
-
-                <!-- <img class="grow__up thumbnail" src="images/slide-1-bg.jpg" -->
-                <!-- alt="Chris standing up holding his daughter Elva"> -->
-                <!-- </picture> -->
-
 
                 <div class="inner__1 inner__responsive">
                     <div id="inner__h__left__2" class="inner__h__left" class="" style="">
@@ -594,18 +466,9 @@
                 <picture>
                     <source media="(max-width: 650px)" srcset="images/originalni-auto-delovi-kribzon-responsive.jpg">
                     <!-- <source media="(min-width: 465px)" srcset="img_white_flower.jpg"> -->
-                    <img class="grow__up thumbnail" src="images/slide-1-bg.jpg" alt="originalni-auto-delovi-kribzon">
+                    <img class="grow__up thumbnail" src="images/main_slider/kribzon-auto-delovi-slider1.jpg"
+                        alt="originalni-auto-delovi-kribzon">
                 </picture>
-
-                <!-- <picture>
-                    <source media="(min-width: 799px)" srcset="/images/slide-1-bg.jpg">
-                    <source media="(max-width: 800px)" srcset="/images/responsive__5.jpg"> -->
-                <!-- <img class="grow__up thumbnail" src="/images/slide-1-bg.jpg" -->
-                <!-- alt="Chris standing up holding his daughter Elva"> -->
-
-                <!-- <img class="grow__up thumbnail" src="images/krib.jpg" -->
-
-                <!-- </picture> -->
                 <div class="inner__1 inner__responsive">
                     <div id="inner__h__left__3" class="inner__h__left" style="">
                         <h2>ORIGINALNI</h2>
@@ -648,11 +511,6 @@
 
     </div>
 
-    <!-- <div class="beetwen">
-        <img class="thumbnail" src="images/slide-1-bg.jpg" alt="Chris standing up holding his daughter Elva">
-    </div> -->
-
-
     <div class="welcome">
         <h3>
             dobro došli u <span>Kribzon</span>
@@ -664,7 +522,6 @@
 
 
     <div class="grid">
-        <!-- <div class="grid__wraper__1"></div> -->
         <div class="img__1 img__1__1">
             <div class="parts__name">
                 <h4>felne</h4>
@@ -743,9 +600,6 @@
                 <h3>
                     O NAMA
                 </h3>
-                <!-- <div class="about__logo"> -->
-                <!-- <img src="/images/kribzon__logo__transparent.svg" alt=""> -->
-                <!-- </div> -->
                 <p>
                     <span class="orange">KRIBZON</span> je ovlašćeni diler prodaje rezervnih delova za automobile <span
                         class="orange">Hyundai i Kia</span>. Svi auto-delovi su
@@ -772,7 +626,7 @@
                 <div class="about__2">
 
                     <div class="about__2__img">
-                        <img src="/images/headset.svg" alt="">
+                        <img src="/images/headset.svg" alt="headset">
                     </div>
                     <div class="about__2__text">
                         <h3>lako poručivanje</h3>
@@ -796,7 +650,7 @@
             <div class="about__all">
                 <div class="about__3">
                     <div class="about__3__img">
-                        <img src="/images/wholesale.svg" alt="">
+                        <img src="/images/wholesale.svg" alt="wholesale">
                     </div>
                     <div class="about__3__text">
                         <h3>veleprodaja</h3>
@@ -817,7 +671,7 @@
             <div class="about__all">
                 <div class="about__4">
                     <div class="about__4__img">
-                        <img src="/images/product.svg" alt="">
+                        <img src="/images/product.svg" alt="product">
                     </div>
                     <div class="about__4__text">
                         <h3>dostava delova</h3>
@@ -837,7 +691,7 @@
             <div class="about__all">
                 <div class="about__4">
                     <div class="about__4__img">
-                        <img src="/images/win.svg" alt="">
+                        <img src="/images/win.svg" alt="win">
                     </div>
                     <div class="about__4__text">
                         <h3>naš tim</h3>
@@ -854,8 +708,6 @@
 
         </div>
     </div>
-    <!-- <div id="container" style="height: 100px; width: 100%; border:1px solid green; background: lightblue;"></div> -->
-
     <div class="pravna__lica">
         <div class="pravna__lica__img"></div>
         <div class="maska__2"></div>
@@ -866,14 +718,12 @@
         <a href="#">prijava</a>
     </div>
     <h3 id="trigger1" class="pravna__lica__h3">posebna ponuda za pravna lica</h3>
-    <!-- <div id="container"> -->
-    <!-- <div id="container1" class="spec__offer__wrap"> -->
     <div class="spec__offer__wrap">
-        <img class="img__back" src="/images/sonata_design-story-main-banner-pc.jpg" alt="">
+        <img class="img__back" src="/images/sonata_design-story-main-banner-pc.jpg" alt="car-sonata">
 
         <div id="block1" class="spec__offer">
             <div class="over"></div>
-            <img class="thumbnail" src="/images/sonata_design-story-main-banner-pc.jpg" alt="">
+            <img class="thumbnail" src="/images/sonata_design-story-main-banner-pc.jpg" alt="car-sonata">
             <div class="spec__offer__h4 ">
                 <h4 class="">specijalna ponuda za profesionalne kupce</h4>
             </div>
@@ -904,42 +754,42 @@
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-2.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 2</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-3.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 3</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-9.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 4</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-5.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 5</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-6.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 6</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-7.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 7</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-8.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 8</div>
                 </li>
                 <li>
                     <img class="" src="images/special-offer/special-offer-9.jpg"
-                        alt="Chris standing up holding his daughter Elva">
+                        alt="kribzon-auto-delovi-special-offer">
                     <div class="p">ponuda 9</div>
                 </li>
             </ul>
@@ -949,25 +799,22 @@
     </div>
     <div id="trigger2"></div>
 
-    <!-- <div id="container">
-        <div id="block">
-            Hi there !
-        </div>
-    </div> -->
-
     <div class="footer">
         <div class="footer__top">
             <div class="logo__footer__wraper">
                 <div class="logo__footer">
-                    <img src="/images/kribzon__logo__transparent.svg" alt="">
+                    <img src="/images/kribzon__logo__transparent.svg" alt="kribzon-logo-img">
                 </div>
                 <p class="footer__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, optio? Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. Recusandae, optio?</p>
                 <ul class="footer__social">
-                    <li><a href="#"><span><img src="/images/location.svg" alt=""> ADRESA: Test adresa Beograd</span></a>
+                    <li><a href="#"><span><img src="/images/location.svg" alt="location"> ADRESA: Test adresa
+                                Beograd</span></a>
                     </li>
-                    <li><a href="#"><span><img src="/images/smartphone.svg" alt="">TELEFON: 1234567</span></a></li>
-                    <li><a href="#"><span><img src="/images/email.svg" alt="">EMAIL: tetst@test.gmail.com</span></a>
+                    <li><a href="#"><span><img src="/images/smartphone.svg" alt="pfhone-num">TELEFON: 1234567</span></a>
+                    </li>
+                    <li><a href="#"><span><img src="/images/email.svg" alt="email">EMAIL:
+                                tetst@test.gmail.com</span></a>
                     </li>
                 </ul>
             </div>
@@ -1028,17 +875,12 @@
                 </div>
                 <div class="footer__botom__inner footer__payment">
                     <a href="#">
-                        <img src="/images/payment.png" alt="">
+                        <img src="/images/payment.png" alt="payment-card">
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- parallax -->
-    <!-- <div class="test" style="height:400px; background: grey"> -->
-    <!-- <img class="thumbnail" src="/images/slide-1-bg.jpg" alt=""> -->
-    <!-- </div> -->
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -1076,20 +918,7 @@
         });
     </script>
     <script src="/js/main.js"></script>
-    <script src="/js/simpleParallax.js"></script>
-    <!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
-    <!-- <script>
-        // init controller
-        var controller = new ScrollMagic.Controller();
-
-        // create a scene
-        new ScrollMagic.Scene({
-                duration: 100, // the scene should last for a scroll distance of 100px
-                offset: 50 // start this scene after scrolling for 50px
-            })
-            .setPin("#spec__offer") // pins the element for the the scene's duration
-            .addTo(controller); // assign the scene to the controller
-    </script> -->
+    <!-- <script src="/js/simpleParallax.js"></script> -->
 </body>
 
 </html>
